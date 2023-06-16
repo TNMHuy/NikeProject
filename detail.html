@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/3224018509.js" crossorigin="anonymous"></script>
+
+    <title>Nike clone</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <!-- logo -->
+            <a href="">
+                <img class="logo" src="https://shoe-store-five.vercel.app/logo.svg" alt="" />
+            </a>
+            <!-- menu -->
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Category</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <!-- menu mobile -->
+            <ul class="menuMobile">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Category</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <ul>
+                <i id="quantity" class="fa badge fa-lg cursor" value="0">&#xf07a;</i>
+                <i class="fa-solid fa-user cursor"></i>
+            </ul>
+        </div>
+        <!-- wishlist, cart -->
+    </header>
+
+    <!-- product -->
+    <div class="detailWrapper">
+        <div class="detail">
+            <div class="detailImg">
+                <img class="photos" src="./assets/image/product/sp1.webp" alt="">
+            </div>
+            <div class="info">
+               
+                <h1 class="detailName"></h1>
+                <h3 class="detailInfo" id="detail">Product Details </h3>
+                <h3 style="opacity: 0.7;" id="type"></h3>
+                <p class="detailPrice"></p>
+                <div class="sizeSelect">
+                    <p>Size select</p>
+                    <div class="sizeType">
+                        <div class="typeBorder">UK 6</div>
+                        <div class="typeBorder">UK 6.5</div>
+                        <div class="typeBorder">UK 7</div>
+                        <div class="typeBorder">UK 7.5</div>
+                        <div class="typeBorder">UK 8</div>
+                        <div class="typeBorder">UK 8.5</div>
+                        <div class="typeBorder">UK 9</div>
+                        <div class="typeBorder">UK 9.5</div>
+                        <div class="typeBorder">UK 10</div>
+                        <div class="typeBorder">UK 10.5</div>
+                        <div class="typeBorder">UK 11</div>
+                        <div class="typeBorder">UK 11.5</div>
+                    </div>
+                    
+                </div>
+                <div class="colorSelect">
+                    <div ><p >Color select</p></div>
+                    <div class="colorType">
+                        <div class="color typeBorder" id="color1"></div>
+                        <div class="color typeBorder" id="color2"></div>
+                    </div>
+                    
+                </div>
+                <button class="butAdd" id="addCart"> Add to cart</button>
+                <button class="butWish" > Wishlist <span><i class="fa-regular fa-heart"></i></span></button>
+                <div class="productDescript" >  
+                    <div>Product description : </div>
+                    <div class="productDetail"id="description"></div>
+                </div>
+            </div>
+                
+        </div>
+
+    </div>
+    <!-- product -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footerWrapper">
+            <div class="footerLeft">
+                <div class="footer1">
+                    <div class="cursor">FIND A STORE</div>
+                    <div class="cursor">BECOME A PARTNER</div>
+                    <div class="cursor">SIGN UP FOR EMAIL</div>
+                    <div class="cursor">SEND US FEEDBACK</div>
+                    <div class="cursor">STUDENT DISCOUNT</div>
+                    <div class="rights urban">
+                        © 2023 Nike, Inc. All Rights Reserved
+                    </div>
+                </div>
+
+                <div class="footer2">
+                    <div class="oswald">GET HELP</div>
+
+                    <div class="urban1">Order Status</div>
+                    <div class="urban1">Delivery</div>
+                    <div class="urban1">Returns</div>
+                    <div class="urban1">Payment Options</div>
+                    <div class="urban1">Contact Us</div>
+                </div>
+
+                <div class="footer2">
+                    <div class="oswald">ABOUT NIKE</div>
+                    <div class="urban1">News</div>
+                    <div class="urban1">Careers</div>
+                    <div class="urban1">Sustainability</div>
+                </div>
+            </div>
+
+            <div class="footerRight">
+                <div>
+                    <ul class="footerRightUp">
+                        <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                        <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                        <li class="icon"><i class="fa-brands fa-youtube"></i></li>
+                        <li class="icon"><i class="fa-brands fa-instagram"></i></li>
+                    </ul>
+                </div>
+                <div class="footerRightDown">
+                    <div class="urban">Guides</div>
+                    <div class="urban">Terms of Sale</div>
+                    <div class="urban">Terms of Use</div>
+                    <div class="urban">Privacy Policy</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+        integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- <script src="./controllers/productController.js"></script> -->
+        <script src="./services/productServices.js"></script>
+        <script src="./controllers/detailProduct.js"></script>
+        <script src="./controllers/cart.js"></script>
+</body>
+
+</html>

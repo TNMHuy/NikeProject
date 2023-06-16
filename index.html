@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3224018509.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/assets/js/main.js"></script>
+
+    <title>Nike clone</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <!-- logo -->
+        <a href="http://127.0.0.1:5500/index.html">
+          <img
+            class="logo"
+            src="https://shoe-store-five.vercel.app/logo.svg"
+            alt=""
+          />
+        </a>
+        <!-- menu -->
+        <ul class="menu">
+          <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="http://127.0.0.1:5500/category.html">Category</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- menu mobile -->
+        <ul class="menuMobile">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Category</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <ul>
+          <i class="fa badge fa-lg cursor" value="0">&#xf07a;</i>
+          <i class="fa-solid fa-user cursor user">
+            <ul class="userCate">
+              <li>User's detail</li>
+              <li>Cart</li>
+              <li>Log out
+                <i class="fa-solid fa-arrow-right-from-bracket cursor"></i>
+              </li>
+            </ul>
+          </i>
+        </ul>
+      </div>
+      <!-- wishlist, cart -->
+    </header>
+    <!-- slider -->
+    <div class="slider">
+      <div class="shopping">SHOP NOW</div>
+      <div class="image" id="slideTrans">
+        <div id="img1">
+          <img src="./assets/image/slide-1.png" alt="" />
+          <div class="shopping">SHOP NOW</div>
+        </div>
+        <div>
+          <img src="./assets/image/slide-2.png" alt="" />
+          <div class="shopping">SHOP NOW</div>
+        </div>
+        <div>
+          <img src="./assets/image/slide-3.png" alt="" />
+          <div class="shopping">SHOP NOW</div>
+        </div>
+      </div>
+      <div class="but">
+        <button class="press cursor" onclick="prev()" id="prev">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="press cursor" onclick="next()" id="next">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <div class="slogan">
+      <p class="slogan1">Cushioning for Your Miles</p>
+      <p class="slogan2">
+        A lightweight Nike ZoomX midsole is combined with increased stack
+        heights to help provide cushioning during extended stretches of running.
+      </p>
+    </div>
+    <!-- slider -->
+
+    <!-- product -->
+    <div class="logo2"> <img src="./assets/image/hot-burst.png" alt=""></div>
+    <div class="productWrap" id="mainProduct">
+      <div class="product">
+
+      </div>
+      <!-- <div class="product">
+        <img src="./assets/image/product/sp2.webp" alt="" />
+        <div class="subProduct">
+          <p class="productName">Air Jordan 1 Mid SE</p>
+          <p class="productPrice">12,295 $  <span class="underl">20,000 $ </span> <span class="sale">38,52% off</span></p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="./assets/image/product/sp3.webp" alt="" />
+        <div class="subProduct">
+          <p class="productName">Air Jordan XXXVII Low PF</p>
+          <p class="productPrice">16,295 $</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="./assets/image/product/sp4.webp" alt="" />
+        <div class="subProduct">
+          <p class="productName">Jordan Stay Loyal 2</p>
+          <p class="productPrice">10,295 $ <span class="underl">15,000 $</span> <span class="sale"> 3,56% off</span></p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="./assets/image/product/sp5.webp" alt="" />
+        <div class="subProduct">
+          <p class="productName">Jordan Delta 3 Low</p>
+          <p class="productPrice">12,795 $</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="./assets/image/product/sp6.webp" alt="" />
+        <div class="subProduct">
+          <p class="productName">Air Jordan 13 Retro
+          </p>
+          <p class="productPrice">19,295 $</p>
+        </div>
+      </div> -->
+      
+    </div>
+
+    <!-- product -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footerWrapper">
+        <div class="footerLeft">
+          <div class="footer1">
+            <div class="cursor">FIND A STORE</div>
+            <div class="cursor">BECOME A PARTNER</div>
+            <div class="cursor">SIGN UP FOR EMAIL</div>
+            <div class="cursor">SEND US FEEDBACK</div>
+            <div class="cursor">STUDENT DISCOUNT</div>
+            <div class="rights urban">
+              © 2023 Nike, Inc. All Rights Reserved
+            </div>
+          </div>
+
+          <div class="footer2">
+            <div class="oswald">GET HELP</div>
+
+            <div class="urban1">Order Status</div>
+            <div class="urban1">Delivery</div>
+            <div class="urban1">Returns</div>
+            <div class="urban1">Payment Options</div>
+            <div class="urban1">Contact Us</div>
+          </div>
+
+          <div class="footer2">
+            <div class="oswald">ABOUT NIKE</div>
+            <div class="urban1">News</div>
+            <div class="urban1">Careers</div>
+            <div class="urban1">Sustainability</div>
+          </div>
+        </div>
+
+        <div class="footerRight">
+          <div >
+            <ul class="footerRightUp">
+              <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+              <li class="icon"><i class="fa-brands fa-twitter "></i></li>
+              <li class="icon"><i class="fa-brands fa-youtube "></i></li>
+              <li class="icon"><i class="fa-brands fa-instagram "></i></li>
+            </ul>
+          </div>
+          <div class="footerRightDown">
+            <div class="urban">Guides</div>
+            <div class="urban">Terms of Sale</div>
+            <div class="urban">Terms of Use</div>
+            <div class="urban">Privacy Policy</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./services/productServices.js"></script>
+    <!-- <script src="./controllers/productController.js"></script> -->
+    <!-- <script src="./controllers/detailProduct.js"></script> -->
+    <script src="./controllers/mainProducts.js"></script>
+    <!-- <script src="./controllers/cart.js"></script> -->
+    <script src="./controllers/auth.js"></script>
+  </body>
+</html>

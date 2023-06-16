@@ -1,0 +1,30 @@
+//api
+Application Programming Interface
+// có sẵn 1 web bán hàng hoạt động 2 năm => database từ 0 sản phẩm => 2000 sản phẩm
+// tạo 1 web mới huywebver2.com
+=> tạo ra api => lấy dữ liệu từ database => trả ra thông tin cần thiết để hiển thị lên web
+sản phẩm : tên, giá, màu, loại, số lượng, mã, hàng tồn kho, đánh giá,size, nguồn nhập...
+api => trả thông tin : tên, giá, màu, loại, số lượng.
+=> xu hướng web api=> call api về , code giao diện
+client => api => database
+1 api : request và response
+request:gồm 
+-url
+-method: GET,POST,DELETE,PUT...
+-headers
+-body : email va password
+response: gần giống request nhưng có status code thay cho url va method
+-status code: 1xx: server nhận được request rồi và đang xử lí.
+              2xx: thành công  
+              3xx: redirect,
+              4xx: lỗi ở phía client
+              5xx: lỗi phía server
+base url + end point
+url: nike-sever-vtcoder.glitch.me/product
+method: GET
+JSON
+{
+    "name":"huy"
+}
+cách call api: dùng axios và fetch
+dùng axios => trả về cho mình 1 promise
